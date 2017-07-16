@@ -11,9 +11,23 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
+/*实现modules级别的统一配置*/
+ext {
+    compileSdkVersion = 25
+    buildToolsVersion = '25.0.3'
+    minSdkVersion = 19
+    targetSdkVersion = 25
+    group = 'com.xiongda.xbjars'
+
+    supportLibVersion = '25.3.1'
+
+    okhttp = 'com.squareup.okhttp3:okhttp:3.8.1'
+    gson = 'com.google.code.gson:gson:2.8.1'
+}
 
 allprojects {
     repositories {
+        jcenter() { url 'http://jcenter.bintray.com/' }
         jcenter()
     }
 }

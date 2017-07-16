@@ -1,4 +1,4 @@
-package com.xiongda.xblibraries;
+package com.xb.httphelper;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.xiongda.xblibraries", appContext.getPackageName());
+        assertEquals("com.xb.httphelper.test", appContext.getPackageName());
     }
 }

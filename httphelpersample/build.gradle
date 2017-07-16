@@ -3,13 +3,16 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
+
     defaultConfig {
-        applicationId "com.xiongda.xbjars"
+        applicationId "com.xb.httphelpersample"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
     buildTypes {
         release {
@@ -25,5 +28,7 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
+    compile "${rootProject.ext.okhttp}"
     testCompile 'junit:junit:4.12'
+    compile project(path: ':httphelper')
 }

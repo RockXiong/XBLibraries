@@ -1,4 +1,4 @@
-package com.xiongda.xblibraries;
+package com.xb.httphelper;
 
 import org.junit.Test;
 
